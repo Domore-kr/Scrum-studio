@@ -1,0 +1,32 @@
+body {
+  font-family: 'Jura';
+}
+
+a {
+  color: #2F353D;
+  text-decoration: none;
+}
+
+.landing_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 120px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 80px;
+  /* or 235% */
+
+
+  color: #2F353D;
+
+  margin-bottom: 128px;
+}
+
+.phone_burger {
+  display: flex;
+  gap: 220px;
+}

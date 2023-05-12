@@ -1,5 +1,6 @@
 body {
   font-family: 'Jura';
+  margin: 0;
 }
 
 a {
@@ -8,11 +9,14 @@ a {
 }
 
 .landing_header {
+  background: linear-gradient(to left, #F5F5F5 50%, #FFFFFF 50%);
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 40px 120px;
+  padding: 40px 120px 128px;
 
   font-style: normal;
   font-weight: 700;
@@ -22,11 +26,26 @@ a {
 
 
   color: #2F353D;
-
-  margin-bottom: 128px;
 }
 
 .phone_burger {
   display: flex;
   gap: 220px;
+}
+
+.swiper_block {
+  padding: 0 0 0 120px;
+  display: flex;
+  gap: 70px;
+}
+
+.swiper_head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 133% */
+
+
+  color: #2F353D;
 }

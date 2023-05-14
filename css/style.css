@@ -303,3 +303,24 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.prices {
+  height: 1189px;
+  background-color: #2F353D;
+  padding: 75px 120px;
+  box-sizing: border-box;
+}
+
+.prices_head {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 50px;
+  /* identical to box height, or 96% */
+
+
+  color: #FFFFFF;
+
+  text-align: center;
+}

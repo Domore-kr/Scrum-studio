@@ -236,3 +236,37 @@ a {
 
   color: #2F353D;
 }
+
+.discuss_the_project {
+  display: flex;
+  gap: 140px;
+  background-color: #2F353D;
+  padding: 50px 80px 70px 120px;
+  box-sizing: border-box;
+  max-height: 530px;
+  margin-bottom: 150px;
+}
+
+.discuss_image {
+  position: relative;
+  top: -170px;
+}
+
+.discuss_button {
+  background: #FFFFFF;
+  color: #2F353D;
+  position: relative;
+  top: -120px;
+}
+
+.discuss_head_mini {
+  margin-bottom: 16px;
+}
+
+.discuss_head {
+  color: #FFFFFF;
+}
+
+.discuss_text {
+  color: #FFFFFF;
+}

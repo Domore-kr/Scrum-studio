@@ -215,11 +215,14 @@
         <section class="prices">
             <h2 class="prices_head">Цены</h2>
             <div class="dropdown">
-                <button class="dropdown__button" onclick="toggleDropdown()">Дизайн и проектирование</button>
+                <div onclick="toggleDropdown()" class="button_arrow_container">
+                    <button class="dropdown__button">Дизайн и проектирование</button>
+                    <img src="/svg/Vector 232.svg" alt="">
+                </div>
                 <div class="dropdown__content" id="myDropdown">
-                    <a onclick="selectDropdownItem(this)">Веб-разработка</a>
-                    <a onclick="selectDropdownItem(this)">SEO</a>
-                    <a onclick="selectDropdownItem(this)">Мобильная разработка</a>
+                    <a class="dropdown_item" onclick="selectDropdownItem(this)">Веб-разработка</a>
+                    <a class="dropdown_item" onclick="selectDropdownItem(this)">SEO</a>
+                    <a class="dropdown_item" onclick="selectDropdownItem(this)">Мобильная разработка</a>
                 </div>
             </div>
         </section>

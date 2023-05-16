@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Jura'
 }
 
 a {
@@ -239,7 +239,6 @@ a {
   background-color: #2F353D;
   padding: 50px 80px 70px 120px;
   box-sizing: border-box;
-  max-height: 530px;
   margin-bottom: 150px;
 }
 
@@ -305,7 +304,6 @@ a {
 }
 
 .prices {
-  height: 1189px;
   background-color: #2F353D;
   padding: 75px 120px;
   box-sizing: border-box;
@@ -328,4 +326,65 @@ a {
 
   text-align: center;
   margin-bottom: 33px;
+}
+
+.prices_services_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price_service {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: space-between;
+
+  font-style: normal;
+  /* identical to box height, or 100% */
+
+
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 20px 0;
+}
+
+.price_service_center_content {
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+
+  color: #B4B4B4;
+  margin-top: auto;
+}
+
+.price_service_head_content {
+  width: 460px;
+}
+
+.price_service_head {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.price_service_center_content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+
+  color: #B4B4B4;
+}
+
+.price_service_right {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
 }

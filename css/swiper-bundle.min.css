@@ -21,8 +21,6 @@
 }
 
 .swiper {
-    width: 580px;
-    height: 580px;
     margin-right: 0;
     margin-left: auto;
     position: relative;
@@ -79,7 +77,7 @@ swiper-slide {
     height: 100%;
     position: relative;
     transition-property: transform;
-    display: block
+    display: flex
 }
 
 .swiper-slide-invisible-blank {
@@ -373,8 +371,8 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-pagination-fraction {
     bottom: var(--swiper-pagination-bottom, 8px);
     top: var(--swiper-pagination-top, auto);
-    left: 0;
-    width: 100%
+    right: 10%;
+    /* width: 100% */
 }
 
 .swiper-pagination-bullets-dynamic {

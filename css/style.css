@@ -110,6 +110,7 @@ a {
 }
 
 .swiper_image {
+  max-height: 580px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -296,11 +297,9 @@ a {
 }
 
 .swiper-slide {
-  width: 100%;
-  height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 90px;
 }
 
 .prices {

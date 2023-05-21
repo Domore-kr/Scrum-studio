@@ -370,6 +370,10 @@ a {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 15px;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .price_service_center_content {

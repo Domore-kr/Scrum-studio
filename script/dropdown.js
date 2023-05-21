@@ -1,3 +1,27 @@
+let intervalId
+
+document.querySelectorAll('.dropdown-toggle').forEach(e => {
+    e.addEventListener('click', e => {
+        const menu = e.currentTarget.dataset.path;
+        document.querySelectorAll('.dropdown-menu').forEach(e => {
+            if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                document.querySelector(`[data-target=${menu}]`).classList.add('menu-active');
+                intervalId = setTimeout(() => {
+                    document.querySelector(`[data-target=${menu}]`).classList.add('open');
+                }, 0)
+            }
+
+            if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                clearTimeout(intervalId);
+                document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
+                intervalId = setTimeout(() => {
+                    document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+                }, 0);
+            }
+        });
+    });
+});
+
 // Изначально выбраный элемент "Дизайн и проектирование"
 var selectedItem = document.getElementById("selectedItem");
 selectedItem.classList.add("selected");
@@ -28,6 +52,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -46,6 +71,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         UX-прототипирование
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Miro
@@ -64,6 +90,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Брендинг и фирменный стиль
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Adobe Photoshop, Adobe Illustrator
@@ -82,6 +109,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн поддержка
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Notion, Britix 24
@@ -100,6 +128,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн фирменной продукции
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -118,6 +147,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -136,6 +166,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -157,6 +188,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -178,6 +210,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle
@@ -199,6 +232,7 @@ function getPricesServicesContent(selectedTitle) {
                 <div class="price_service_head_content">
                     <h3 class="price_service_head">
                         Дизайн интерфейсов
+                        <img src="/svg/Vector 232.svg" alt="">
                     </h3>
                     <p class="price_service_content">
                         Figma, Principle

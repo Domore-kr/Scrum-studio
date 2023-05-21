@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .dropdown__button {
@@ -55,5 +56,83 @@
 }
 
 .show {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    padding: 40px 25px 10px 50px;
+    background-color: #E3E3E3;
+
+}
+
+.dropdown-menu_item {
+    border: none;
+}
+
+.dropdown-menu_item:nth-last-child(n + 2) {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.price_service_head_content_dropdown {
+    width: 250px;
+}
+
+.dropdown-menu_item_head {
+    margin-bottom: 15px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.5307px;
+    line-height: 28px;
+    /* or 130% */
+
+
+    color: #2F353D;
+}
+
+.price_service_content_dropdown {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.1695px;
+    line-height: 28px;
+    /* or 231% */
+
+
+    color: #939496;
+}
+
+.price_service_center_content_dropdown {
+    margin-top: auto;
+}
+
+.price_service_center_dropdown {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.42504px;
+    line-height: 28px;
+    /* or 333% */
+
+
+    color: #B4B4B4;
+}
+
+.price_service_right_dropdown {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.5307px;
+    line-height: 28px;
+    /* or 130% */
+
+    text-align: right;
+
+    color: #2F353D;
+}
+
+.menu-active {
     display: block;
 }

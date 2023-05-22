@@ -7,7 +7,7 @@ function changeContent(category) {
 
     tabsContent.forEach(content => {
         if (content.dataset.category === category) {
-            content.style.display = 'block';
+            content.style.display = 'flex';
         } else {
             content.style.display = 'none';
         }
@@ -25,7 +25,7 @@ function handleTagClick(event) {
 
     tabsContent.forEach(content => {
         if (content.dataset.category === category) {
-            content.style.display = 'block';
+            content.style.display = 'flex';
         } else {
             content.style.display = 'none';
         }

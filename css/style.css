@@ -8,6 +8,15 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 .landing_header {
   background: linear-gradient(to left, #F5F5F5 50%, #FFFFFF 50%);
 }
@@ -318,6 +327,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .prices_head {
@@ -342,7 +352,7 @@ a {
 
 .price_service {
   display: flex;
-  gap: 100px;
+  gap: 50px;
   align-items: center;
   white-space: nowrap;
   justify-content: space-between;
@@ -378,7 +388,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 15px;
-  gap: 40px;
+  gap: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -398,4 +408,31 @@ a {
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
+}
+
+.projects {
+  padding: 0 120px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.button-tag {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+
+  color: #2F353D;
+
+  background: #FFFFFF;
+  border: 2px solid #000000;
+
+  padding: 10px 20px;
 }

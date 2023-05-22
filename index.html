@@ -1176,12 +1176,53 @@
 
             </div>
         </section>
+        <section class="projects">
+            <h2 class="services_head">Проекты</h2>
+            <div class="tabs__buttons">
+                <ul class="tags">
+                    <li class="tag">
+                        <button class="button-tag" onclick="changeContent('all')">
+                            Все клиенты
+                        </button>
+                    </li>
+                    <li class="tag">
+                        <button class="button-tag" onclick="changeContent('ecommerce')">
+                            E-commerce
+                        </button>
+                    </li>
+                    <li class="tag">
+                        <button class="button-tag" onclick="changeContent('web-service')">
+                            Web-сервис
+                        </button>
+                    </li>
+                </ul>
+                <div class="tabs_content" data-category="all">
+                    <div class="project_container" data-category="all">1</div>
+                    <div class="project_container" data-category="all">1</div>
+                    <div class="project_container" data-category="all">1</div>
+                    <div class="project_container" data-category="all">1</div>
+                </div>
+                <div class="tabs_content" data-category="ecommerce">
+                    <div class="project_container" data-category="ecommerce">2</div>
+                    <div class="project_container" data-category="ecommerce">2</div>
+                    <div class="project_container" data-category="ecommerce">2</div>
+                    <div class="project_container" data-category="ecommerce">2</div>
+                </div>
+                <div class="tabs_content" data-category="web-service">
+                    <div class="project_container" data-category="web-service">3</div>
+                    <div class="project_container" data-category="web-service">3</div>
+                    <div class="project_container" data-category="web-service">3</div>
+                    <div class="project_container" data-category="web-service">3</div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <script src="./script/burger.js"></script>
     <script src="/script/swiper-bundle.min.js"></script>
     <script src="/script/dropdown.js"></script>
+    <script src="/script/projects.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',

@@ -1179,40 +1179,44 @@
         <section class="projects">
             <h2 class="services_head">Проекты</h2>
             <div class="tabs__buttons">
-                <ul class="tags">
+                <ul class="tags" onclick="handleTagClick(event)">
                     <li class="tag">
-                        <button class="button-tag" onclick="changeContent('all')">
+                        <button class="button-tag tabs__btn_active" data-category="all">
                             Все клиенты
                         </button>
                     </li>
                     <li class="tag">
-                        <button class="button-tag" onclick="changeContent('ecommerce')">
+                        <button class="button-tag" data-category="ecommerce">
                             E-commerce
                         </button>
                     </li>
                     <li class="tag">
-                        <button class="button-tag" onclick="changeContent('web-service')">
+                        <button class="button-tag" data-category="web-service">
                             Web-сервис
                         </button>
                     </li>
+                    <!-- Добавьте остальные кнопки здесь -->
                 </ul>
-                <div class="tabs_content" data-category="all">
-                    <div class="project_container" data-category="all">1</div>
-                    <div class="project_container" data-category="all">1</div>
-                    <div class="project_container" data-category="all">1</div>
-                    <div class="project_container" data-category="all">1</div>
-                </div>
-                <div class="tabs_content" data-category="ecommerce">
-                    <div class="project_container" data-category="ecommerce">2</div>
-                    <div class="project_container" data-category="ecommerce">2</div>
-                    <div class="project_container" data-category="ecommerce">2</div>
-                    <div class="project_container" data-category="ecommerce">2</div>
-                </div>
-                <div class="tabs_content" data-category="web-service">
-                    <div class="project_container" data-category="web-service">3</div>
-                    <div class="project_container" data-category="web-service">3</div>
-                    <div class="project_container" data-category="web-service">3</div>
-                    <div class="project_container" data-category="web-service">3</div>
+                <div class="tabs_container">
+                    <div class="tabs_content" data-category="all">
+                        <div class="project_container">1</div>
+                        <div class="project_container">1</div>
+                        <div class="project_container">1</div>
+                        <div class="project_container">1</div>
+                    </div>
+                    <div class="tabs_content" data-category="ecommerce">
+                        <div class="project_container">2</div>
+                        <div class="project_container">2</div>
+                        <div class="project_container">2</div>
+                        <div class="project_container">2</div>
+                    </div>
+                    <div class="tabs_content" data-category="web-service">
+                        <div class="project_container">3</div>
+                        <div class="project_container">3</div>
+                        <div class="project_container">3</div>
+                        <div class="project_container">3</div>
+                    </div>
+                    <!-- Добавьте остальные контентные блоки здесь -->
                 </div>
             </div>
         </section>

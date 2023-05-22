@@ -435,4 +435,15 @@ button {
   border: 2px solid #000000;
 
   padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.tabs__btn_active {
+  color: #FFFFFF;
+  background-color: #2F353D;
+  border: 2px solid #2F353D;
+}
+
+.tabs_content {
+  display: none;
 }

@@ -1,6 +1,27 @@
+window.addEventListener('DOMContentLoaded', function () {
+    changeContent('all');
+});
+
 function changeContent(category) {
     const tabsContent = document.querySelectorAll('.tabs_content');
-    const allButton = document.getElementById('allButton');
+
+    tabsContent.forEach(content => {
+        if (content.dataset.category === category) {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    });
+}
+
+function handleTagClick(event) {
+    const targetButton = event.target.closest('button');
+
+    if (!targetButton) return; // Игнорируем клики вне кнопок
+
+    const category = targetButton.dataset.category;
+    const tabsContent = document.querySelectorAll('.tabs_content');
+    const buttons = document.querySelectorAll('.tags button');
 
     tabsContent.forEach(content => {
         if (content.dataset.category === category) {
@@ -10,9 +31,10 @@ function changeContent(category) {
         }
     });
 
-    allButton.classList.remove('tabs__btn_active');
-    document.querySelector(`button[data-category="${category}"]`).classList.add('tabs__btn_active');
+    buttons.forEach(button => {
+        button.classList.remove('tabs__btn_active');
+    });
+
+    targetButton.classList.add('tabs__btn_active');
 }
 
-// По умолчанию отображаем только категорию "all" при загрузке страницы
-changeContent('all');

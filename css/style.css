@@ -499,3 +499,55 @@ button {
 
   color: #FFFFFF;
 }
+
+.reviews {
+  flex-direction: row;
+  gap: 170px;
+}
+
+.reviews_button {
+  position: static;
+}
+
+.review_img_name_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.review_name {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 60px;
+  /* identical to box height, or 250% */
+
+
+  color: #FFFFFF;
+}
+
+.review_text {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  color: #FFFFFF;
+
+
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 36.41%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.review_container {
+  max-width: 460px;
+}
+
+.review_text_left {
+  color: #FFFFFF;
+  margin-bottom: 62px;
+}

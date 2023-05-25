@@ -292,6 +292,10 @@ button {
   align-items: center;
 }
 
+.technology_img {
+  width: 100px;
+}
+
 .achievements_and_partners {
   margin-bottom: 15px;
 }

@@ -528,6 +528,12 @@ button {
   color: #FFFFFF;
 }
 
+.reviews_content_container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .review_text {
   font-family: 'Jura';
   font-style: normal;
@@ -541,12 +547,6 @@ button {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 36.41%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.reviews_content_container {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
 }
 
 .review_container {
@@ -578,11 +578,19 @@ button {
   content: "Скрыть";
 }
 
-.read-more-checker:checked~.review_container {
+#read-more-checker-1:checked~#review_container1 {
   max-height: none;
 }
 
-.read-more-checker:checked~.review_container .review_text {
+#read-more-checker-2:checked~#review_container2 {
+  max-height: none;
+}
+
+#read-more-checker-1:checked~#review_container1 .review_text {
+  -webkit-text-fill-color: white;
+}
+
+#read-more-checker-2:checked~#review_container2 .review_text {
   -webkit-text-fill-color: white;
 }
 
@@ -601,6 +609,4 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 450px;
-  height: 30px;
 }

@@ -543,11 +543,64 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.reviews_content_container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .review_container {
-  max-width: 460px;
+  max-width: 790px;
+  max-height: 310px;
+  overflow: hidden;
+  position: relative;
 }
 
 .review_text_left {
   color: #FFFFFF;
   margin-bottom: 62px;
+}
+
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
+}
+
+.read-more-checker:checked~.read-more-button:before {
+  content: "Скрыть";
+}
+
+.read-more-button:before {
+  content: "Читать полностью";
+}
+
+.read-more-checker:checked+.review_container .read-more-button:before {
+  content: "Скрыть";
+}
+
+.read-more-checker:checked~.review_container {
+  max-height: none;
+}
+
+.read-more-checker:checked~.review_container .review_text {
+  -webkit-text-fill-color: white;
+}
+
+
+.read-more-button {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  text-align: right;
+
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  height: 30px;
 }

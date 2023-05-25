@@ -556,6 +556,12 @@ button {
   position: relative;
 }
 
+.review_container svg {
+  position: absolute;
+  top: 22px;
+  left: calc(50% - 75px);
+}
+
 .review_text_left {
   color: #FFFFFF;
   margin-bottom: 62px;

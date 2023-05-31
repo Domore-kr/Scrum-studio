@@ -356,6 +356,8 @@ button {
 }
 
 .price_service {
+  z-index: 5;
+  position: relative;
   display: flex;
   gap: 50px;
   align-items: center;

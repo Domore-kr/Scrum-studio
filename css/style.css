@@ -622,6 +622,10 @@ button {
   right: 0;
 }
 
+.form_container {
+  margin-bottom: 215px;
+}
+
 .form_head {
   margin-bottom: 50px;
 }
@@ -757,4 +761,83 @@ button {
   background: #FFFFFF;
   border: 1px solid #000000;
   color: #2F353D;
+}
+
+.footer_scrum {
+  background: #2F353D;
+  padding: 45px 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+}
+
+.left_foot_container {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.name_tel_foot_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.foot_header {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 80px;
+  /* or 235% */
+
+
+  color: #929599;
+}
+
+.foot_phone {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.foot_social_container {
+  display: flex;
+  gap: 40px;
+}
+
+.right_foot_container {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_block {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+  max-height: 250px;
+}
+
+.footer_href_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_href {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+
+  color: #FFFFFF;
 }
